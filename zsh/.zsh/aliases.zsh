@@ -10,17 +10,15 @@ alias la="ls -la"
 alias cr="chruby"
 alias desk="cd $HOME/Desktop"
 alias home="cd $HOME/"
-alias pro="cd $HOME/projects/"
-alias dotfiles="cd $HOME/projects/dotfiles"
-alias kep="cd $HOME/keplar/"
-alias m="cd $HOME/machinery/"
-alias 8="cd $HOME/80beans/"
+alias dev="cd $HOME/Development/"
+alias dotfiles="cd $HOME/Development/dev/dotfiles"
+alias kep="cd $HOME/Development/keplar/"
 if [[ $(uname -s) == "Darwin" ]]; then
   alias flushdns="dscacheutil -flushcache"
 else
   alias flushdns="sudo /etc/init.d/nscd restart"
 fi;
-alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Git
 alias g="open -a gitx ."

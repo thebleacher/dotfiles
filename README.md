@@ -8,7 +8,6 @@ These dotfiles contain configuration and installation for:
 * ZSH
 * Dotfiles
 * Sublime
-* VIM (and MacVIM)
 * chruby and ruby-install
 * Misc. Utilities
 
@@ -90,34 +89,11 @@ Install the following Sublime plugins through Sublime package control once
 it is installed.
 
 - [Package Control](http://wbond.net/sublime_packages/package_control)
-- [RSpec](git clone git://github.com/SublimeText/RSpec.git)
+- [BracketHighlighter](https:/github.com/facelessuser/BracketHighlighter)
+- [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended.git)
 - [Sass](https://github.com/nathos/sass-textmate-bundle)
-- [CoffeeScript](https://github.com/Xavura/CoffeeScript-Sublime-Plugin)
-- [AngularJS (CoffeeScript)](https://github.com/EastPoint/Sublime-AngularJS-Coffee-Completions)
-- [eco](https://github.com/davidjrice/sublime-eco)
-- [GitGutter](https://github.com/jisaacks/GitGutter)
-- [JsFormat](https://github.com/jdc0589/JsFormat)
-- [Theme - Phoenix](https://github.com/netatoo/phoenix-theme) - Dark Blue
-  - Syntax highlighting: __Default/Twilight.tmTheme__
-
-### VIM
-
-Mac OSX comes installed with an old version of VIM.
-Replace this installation with a recent version of VIM through Homebrew.
-
-    brew install --with-features=huge --enable-interp=lua,ruby,perl,python \
-      https://raw.github.com/telemachus/homebrew/vim-mine/Library/Formula/vim.rb
-
-### MacVIM
-
-Next, install MacVIM as well.
-
-    brew install mercurial vim macvim
-
-Run vundle to install vim plugins.
-
-1. Start vim
-2. Run: `:BundleInstall`
+- [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel.git)
+- [Theme - Soda](https://github.com/buymeasoda/soda-theme.git)
 
 ### chruby and ruby-install
 
@@ -137,10 +113,6 @@ ruby-install ruby-[VERSION] ~/.rubies/ruby-[VERSION]
 **Node.js platform.**
 
     brew install node
-
-**CoffeeScript language.**
-
-    npm install coffee-script
 
 **Some datastores.**
 
