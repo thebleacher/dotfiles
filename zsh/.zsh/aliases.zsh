@@ -55,6 +55,7 @@ alias TEST="RAILS_ENV=test"
 alias DEV="RAILS_ENV=development"
 
 alias rs="bundle exec rails server"
+alias rst="rs thin"
 alias rc="bundle exec rails console"
 alias rg="bundle exec rails generate"
 
