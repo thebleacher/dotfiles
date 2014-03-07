@@ -49,6 +49,10 @@ alias gu="be guard"
 alias rr="be rake routes"
 alias rake="noglob rake" # allows square brackts for rake task invocation
 
+# Middleman
+alias ms="be middleman s"
+alias mb="be middleman b"
+
 # Rails
 alias PROD="RAILS_ENV=production"
 alias TEST="RAILS_ENV=test"
