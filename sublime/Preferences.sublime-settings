@@ -27,6 +27,11 @@
 	[
 		"Vintage"
 	],
+	"rulers":
+	[
+		80,
+		110
+	],
 	"tab_size": 2,
 	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
