@@ -1,7 +1,7 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": false,
 	"drag_text": false,
@@ -34,6 +34,7 @@
 		80,
 		110
 	],
+	"scroll_past_end": true,
 	"tab_size": 2,
 	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
