@@ -42,10 +42,10 @@ alias bet="be rspec"
 alias cbet="COV=1 be rspec"
 
 #Bundle exec spring
-alias bs="bundle exec spring"
-alias bsr="bs rake"
-alias bst="bs rspec"
-alias cbst="COV=1 bs rspec"
+alias s="spring"
+alias sr="s rake"
+alias st="s rspec"
+alias cbst="COV=1 s rspec"
 
 # Rake tasks
 alias rr="be rake routes"
@@ -66,17 +66,17 @@ alias rs="be rails s"
 alias rc="be rails c"
 alias rg="be rails g"
 
-alias srs="bs rails s"
-alias src="bs rails c"
-alias srg="bs rails g"
+alias srs="s rails s"
+alias src="s rails c"
+alias srg="s rails g"
 
 alias rdm="be rake db:migrate"
 alias rdr="be rake db:migrate:reset"
 alias rds="be rake db:seed"
 
-alias srdm="bs rake db:migrate"
-alias srdr="bs rake db:migrate:reset"
-alias srds="bs rake db:seed"
+alias srdm="s rake db:migrate"
+alias srdr="s rake db:migrate:reset"
+alias srds="s rake db:seed"
 
 alias rdi="rdr && rds"
 alias rdsd="rdr && SEED_DEMO=1 bundle exec rake db:seed"
