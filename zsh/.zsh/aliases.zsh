@@ -17,7 +17,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
 else
   alias flushdns="sudo /etc/init.d/nscd restart"
 fi;
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Git
 alias g="open -a gitx ."
