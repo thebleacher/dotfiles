@@ -5,6 +5,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias sudo="nocorrect sudo"
 alias ..="cd .."
 alias mou="open -a mou"
+alias l="ls"
 alias la="ls -la"
 alias desk="cd $HOME/Desktop"
 alias home="cd $HOME/"
