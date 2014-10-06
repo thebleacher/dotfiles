@@ -36,7 +36,7 @@ Set osx defaults.
 Next, install [Homebrew](http://mxcl.github.com/homebrew/) using the following
 command.
 
-    ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 After installing Homebrew, ensure permissions are correct by running the
 following.
