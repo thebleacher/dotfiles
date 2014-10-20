@@ -81,3 +81,6 @@ alias srds="s rake db:seed"
 
 alias rdi="rdr && rds"
 alias rdsd="rdr && SEED_DEMO=1 bundle exec rake db:seed"
+
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
