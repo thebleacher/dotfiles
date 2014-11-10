@@ -52,7 +52,7 @@ alias cbst="COV=1 s rspec"
 alias rr="be rake routes"
 alias rake="noglob rake" # allows square brackts for rake task invocation
 
-alias srr="bs rake routes"
+alias srr="s rake routes"
 
 # Middleman
 alias ms="be middleman s"
@@ -84,3 +84,6 @@ alias rdsd="rdr && SEED_DEMO=1 bundle exec rake db:seed"
 
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# Rubocop
+alias cop="be rubocop"
