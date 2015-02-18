@@ -29,3 +29,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Node Packager Manager bin path
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+# Current working directory bin path
+export PATH="bin:$PATH"
