@@ -20,7 +20,8 @@
 		"coverage",
 		"doc",
 		"tmp",
-		"log"
+		"log",
+		".capistrano"
 	],
 	"font_size": 14.0,
 	"git_gutter_live_mode": false,
