@@ -13,6 +13,14 @@ SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 ln -nfs "$(pwd)/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Preferences.sublime-settings"
 ln -nfs "$(pwd)/sublime/Default (OSX).sublime-keymap" "$SUBLIME_DIR/Default (OSX).sublime-keymap"
 
+if ! [ -d "$HOME/.atom" ]
+then
+  mkdir "$HOME/.atom"
+fi
+
+ln -nfs "$(pwd)/atom/config.cson" "$HOME/.atom/config.cson"
+ln -nfs "$(pwd)/atom/styles.less" "$HOME/.atom/styles.less"
+
 ln -nfs "$(pwd)/git/.gitignore_global"  "$HOME/.gitignore_global"
 
 git config --global color.diff always

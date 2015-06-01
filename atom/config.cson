@@ -1,0 +1,42 @@
+"*":
+  "exception-reporting":
+    userId: "24dd800a-ca70-bf59-c5ef-9b567968c56c"
+  welcome:
+    showOnStartup: false
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "tmp"
+      "log"
+      ".DS_Store"
+      ".capistrano"
+      "coverage"
+    ]
+    excludeVcsIgnoredPaths: false
+    audioBeep: false
+    destroyEmptyPanes: false
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showInvisibles: true
+    showIndentGuide: true
+    fontFamily: "Menlo"
+    preferredLineLength: 100
+  "tree-view":
+    hideIgnoredNames: true
+  "omni-ruler":
+    columns: []
+  "merge-conflicts": {}
+  minimap:
+    displayPluginsControls: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "file-icons":
+    coloured: false
+  "one-dark-ui":
+    layoutMode: "Compact"
+  linter:
+    ignoredLinterErrors: [
+      "rubocop"
+    ]

@@ -95,6 +95,16 @@ it is installed.
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel.git)
 - [Theme - Soda](https://github.com/buymeasoda/soda-theme.git)
 
+### Atom plugins
+
+- atom-eco
+- file-icons
+- language-dotenv
+- language-haml
+- language-rspec
+- minimap
+- omni-ruler
+
 ### chruby and ruby-install
 
 Install chruby by following the instructions on the
