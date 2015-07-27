@@ -21,6 +21,7 @@ fi
 ln -nfs "$(pwd)/atom/config.cson" "$HOME/.atom/config.cson"
 ln -nfs "$(pwd)/atom/styles.less" "$HOME/.atom/styles.less"
 
+ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
 ln -nfs "$(pwd)/git/.gitignore_global"  "$HOME/.gitignore_global"
 
 git config --global color.diff always
