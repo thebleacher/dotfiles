@@ -19,13 +19,15 @@ end)
 hotkey.bind({"ctrl", "alt"}, "down", function()
   local win = window.focusedWindow()
   local f = win:frame()
+  f.w = 1920
+  f.h = 1080
+  win:setFrame(f)
+
   local screen = win:screen()
   local max = screen:frame()
 
   f.x = (max.w - f.w) / 2
   f.y = (max.h - f.h) / 2
-  f.w = 1920
-  f.h = 1080
   win:setFrame(f)
 end)
 
