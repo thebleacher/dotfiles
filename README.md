@@ -30,7 +30,8 @@ Run:
 Next, clone this Git repository to your $HOME directory and initialize/update
 the submodules and finally hook everything up by running the `install` script.
 
-    git clone git://github.com/thebleacher/dotfiles.git $HOME/dotfiles
+    git clone git://github.com/martijnbleeker/dotfiles.git $HOME/dotfiles
+
     cd $HOME/dotfiles && git submodule init && \
       git submodule update --recursive && ./install
 
@@ -53,7 +54,7 @@ command.
 After installing Homebrew, ensure permissions are correct by running the
 following.
 
-    sudo chown -R $(whoami) /usr/local
+    sudo chown -R $(whoami):admin /usr/local
     brew update
     brew tap Homebrew/bundle
     brew bundle
@@ -103,4 +104,10 @@ Install chruby by following the instructions on the
 
 ```bash
 ruby-install ruby-[VERSION] ~/.rubies/ruby-[VERSION]
+```
+
+#### Vundle
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +:PluginInstall
 ```
