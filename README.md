@@ -25,6 +25,18 @@ Run:
 
 `xcode-select --install`
 
+### Environment, ZSH, Sublime configuration
+
+Next, clone this Git repository to your $HOME directory and initialize/update
+the submodules and finally hook everything up by running the `install` script.
+
+    git clone git://github.com/thebleacher/dotfiles.git $HOME/dotfiles
+    cd $HOME/dotfiles && git submodule init && \
+      git submodule update --recursive && ./install
+
+This should set up the symlinks from the dotfiles directory to your `$HOME`
+directory, do not remove the `dotfiles` directory.
+
 ### OSX defaults
 
 Set osx defaults.
@@ -43,6 +55,8 @@ following.
 
     sudo chown -R $(whoami) /usr/local
     brew update
+    brew tap Homebrew/bundle
+    brew bundle
 
 ### ITerm2
 
@@ -58,30 +72,6 @@ Under "(Global) Keys" add the following maps *:
 - `alt + ->` = `Send Escape Sequence: f`
 
 \* = Use the actual keys, not the text above.
-
-### Git
-
-Get the latest version of Git.
-
-    brew install git
-
-### ZSH
-
-Install ZSH with the following command:
-
-    brew install zsh
-
-### Environment, ZSH, Sublime configuration
-
-Next, clone this Git repository to your $HOME directory and initialize/update
-the submodules and finally hook everything up by running the `install` script.
-
-    git clone git://github.com/tombruijn/dotfiles.git $HOME/dotfiles
-    cd $HOME/dotfiles && git submodule init && \
-      git submodule update --recursive && ./install
-
-This should set up the symlinks from the dotfiles directory to your `$HOME`
-directory, do not remove the `dotfiles` directory.
 
 ### Sublime plugins
 
@@ -110,24 +100,7 @@ it is installed.
 Install chruby by following the instructions on the
 [project page](https://github.com/postmodern/chruby).
 
-Or as lazy me would do it:
 
 ```bash
-brew install chruby
-brew install ruby-install
 ruby-install ruby-[VERSION] ~/.rubies/ruby-[VERSION]
 ```
-
-### Misc. Utilities
-
-**Node.js platform.**
-
-    brew install node
-
-**Some datastores.**
-
-    brew install postgresql mongodb redis mysql memcached
-
-**Here are some misc. utilities.** (not necessarily required)
-
-    brew install ack tree ffmpeg imagemagick htop-osx watch qt
