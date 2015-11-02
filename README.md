@@ -106,8 +106,9 @@ Install chruby by following the instructions on the
 ruby-install ruby-[VERSION] ~/.rubies/ruby-[VERSION]
 ```
 
+### Vim
+
 #### Vundle
 ```bash
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +:PluginInstall
 ```
