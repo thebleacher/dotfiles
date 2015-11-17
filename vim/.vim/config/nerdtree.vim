@@ -12,7 +12,7 @@ let NERDTreeIgnore=[
   \ '\.sass-cache',
   \ '\.capistrano',
   \ '\.yardoc',
-  \ 'build'
+  \ 'build/'
 \ ]
 
 " Don't open NERDTree if I open a directory with vim
