@@ -1,6 +1,6 @@
 ZSH_DIR="$HOME/.zsh" # Path to my custom ZSH directory
 
-export EDITOR=nano
+export EDITOR=vim
 
 # Config
 source "$ZSH_DIR/config.zsh"
