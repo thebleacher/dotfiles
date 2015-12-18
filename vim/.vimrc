@@ -102,6 +102,7 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd FileType css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd Filetype gitcommit let &l:colorcolumn="50,72" | setlocal spell textwidth=72
 
 " Markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
