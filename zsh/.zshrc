@@ -25,7 +25,7 @@ source "/usr/local/share/chruby/auto.sh"
 export DISABLE_SPRING="true"
 
 # Base paths
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:./bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Heroku Toolbelt bin path
 export PATH="/usr/local/heroku/bin:$PATH"
