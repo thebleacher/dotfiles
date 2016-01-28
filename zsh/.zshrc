@@ -21,6 +21,9 @@ source "$ZSH_DIR/aliases.zsh"
 source "/usr/local/share/chruby/chruby.sh"
 source "/usr/local/share/chruby/auto.sh"
 
+# Globally disable spring
+export DISABLE_SPRING="true"
+
 # Base paths
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:./bin:$PATH"
 
