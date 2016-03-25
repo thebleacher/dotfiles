@@ -36,9 +36,13 @@ done
 # https://github.com/postmodern/chruby/issues/196#issuecomment-23826171
 [[ -e /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zprofile
 
+# Global Git configuration
 git config --global color.diff always
 git config --global user.email "martijn@thebleacher.com"
 git config --global user.name "Martijn Bleeker"
 git config --global core.excludesfile "$HOME/.gitignore_global"
 git config --global merge.ff only
 git config --global rebase.autosquash true
+git config --global transfer.fsckobjects true
+git config --global push.default current
+git config --global remote.origin.prune true
