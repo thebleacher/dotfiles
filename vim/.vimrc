@@ -87,6 +87,8 @@ let c_space_errors=1              " Highlight trailing spaces
 set splitbelow                    " Open vsplits to below
 set splitright                    " Open hsplits to the right
 
+set cm=blowfish2
+
 " Flag filetypes
 " - Ruby
 autocmd BufRead,BufNewFile {Rakefile,Gemfile,config.ru,Vagrantfile,Thorfile} set ft=ruby
