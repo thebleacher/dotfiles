@@ -57,7 +57,7 @@ alias PROD="RAILS_ENV=production"
 alias TEST="RAILS_ENV=test"
 alias DEV="RAILS_ENV=development"
 
-alias rs="be rails s"
+alias rs="be rails s --binding=0.0.0.0"
 alias rc="be rails c"
 alias rg="be rails g"
 
