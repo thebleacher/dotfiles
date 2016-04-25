@@ -1,4 +1,5 @@
 tap "homebrew/dupes"
+tap "homebrew/versions"
 tap "caskroom/cask"
 
 brew "vim", args: ["--with-lua"]
@@ -28,6 +29,7 @@ brew "openssl"
 brew "openssh"
 
 brew "node"
+brew "qt55"
 
 brew "ack"
 brew "grep", args: ["--with-default-names"]
