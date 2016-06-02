@@ -13,6 +13,7 @@ alias dev="cd $HOME/Development/"
 alias dotfiles="cd $HOME/Development/dev/dotfiles"
 alias kep="cd $HOME/Development/keplar/"
 alias 4="cd $HOME/Development/415/"
+alias qm="cd $HOME/Development/questionmark/"
 alias exp="cd $HOME/Development/experiments/"
 alias mm="cd $HOME/Development/meukmap/"
 if [[ $(uname -s) == "Darwin" ]]; then
