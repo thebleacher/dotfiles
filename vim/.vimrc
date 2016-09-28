@@ -27,6 +27,8 @@ Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'slim-template/vim-slim.git'
+
 call vundle#end()
 
 syntax enable
@@ -83,7 +85,7 @@ set pastetoggle=<F2>
 set background=dark
 colorscheme twilight
 
-let &colorcolumn="80,120"         " Highlight column 80 and 100
+let &colorcolumn="80,100,120"     " Highlight column 80, 100 and 120
 let c_space_errors=1              " Highlight trailing spaces
 set splitbelow                    " Open vsplits to below
 set splitright                    " Open hsplits to the right
