@@ -44,6 +44,7 @@ brew "optipng"
 brew "jpegoptim"
 brew "ffmpeg", args: ["--with-faac", "--with-fdk-aac", "--with-ffplay", "--with-fontconfig", "--with-freetype", "--with-frei0r", "--with-libass", "--with-libbs2b", "--with-libcaca", "--with-libquvi", "--with-libsoxr", "--with-libssh", "--with-libvidstab", "--with-libvorbis", "--with-libvpx", "--with-opencore-amr", "--with-openjpeg", "--with-openssl", "--with-opus", "--with-rtmpdump", "--with-schroedinger", "--with-speex", "--with-theora", "--with-tools", "--with-webp", "--with-x265", "--with-zeromq"]
 brew "youtube-dl"
+brew "flac"
 
 brew "gpg"
 
