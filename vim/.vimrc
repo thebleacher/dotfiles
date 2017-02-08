@@ -35,6 +35,7 @@ syntax enable
 filetype plugin indent on
 
 set encoding=utf-8
+set shortmess+=I
 
 set showcmd                       " Display incomplete commands.
 set noshowmode                    " Display the mode you're in.
