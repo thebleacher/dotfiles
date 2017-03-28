@@ -6,7 +6,6 @@ brew "vim", args: ["--with-lua"]
 brew "macvim"
 
 brew "zsh"
-brew "keybase"
 
 brew "git"
 brew "mercurial"
@@ -56,5 +55,6 @@ cask "flux"
 cask "google-chrome"
 cask "hammerspoon"
 cask "iterm2"
+cask "keybase"
 cask "slack"
 cask "vlc"
