@@ -76,6 +76,10 @@ set history=1000                  " Remember last 1000 commands.
 set undolevels=1000               " Remember last 1000 undos.
 set wildignore=*.swp,*.swo,*.bak,*.class
 
+" Maintain undo history between sessions
+set undodir=~/.vim/undodir
+set undofile
+
 set tabstop=2                     " Global tab width.
 set shiftwidth=2                  " And again, related.
 set expandtab                     " Use spaces instead of tabs.
