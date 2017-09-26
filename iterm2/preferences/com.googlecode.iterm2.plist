@@ -21,7 +21,7 @@
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<true/>
 	<key>CommandSelection</key>
-	<true/>
+	<false/>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>CopyLastNewline</key>
@@ -442,6 +442,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -499,25 +501,25 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>236 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1338 940 400 129 0 0 1920 1177 </string>
+	<string>760 798 400 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 601 620 392 0 0 1920 1177 </string>
+	<string>650 602 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 167 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>271 737 918 381 0 0 1920 1177 </string>
+	<string>271 653 1018 447 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>160 50 1274 826 0 0 1440 877 </string>
+	<string>960 53 954 1124 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>480 617 954 792 0 0 2560 1417 </string>
+	<string>960 62 954 1115 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 590 954 826 0 0 2560 1417 </string>
+	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 62 955 1115 0 0 1920 1177 </string>
+	<string>960 62 954 1115 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>930 470 990 707 0 0 1920 1177 </string>
+	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>930 470 990 707 0 0 1920 1177 </string>
+	<string>0 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>960 62 955 1115 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
@@ -782,7 +784,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1287,6 +1289,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>76A456CB-849C-402A-9C26-0A883E8712F1</string>
 	<key>NoSyncLastTipTime</key>
@@ -1349,6 +1353,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PerformDNSLookups</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1403,7 +1409,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-03T10:12:08Z</date>
+	<date>2017-09-21T13:42:19Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1426,6 +1432,10 @@
 	<false/>
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>URLHandlersByGuid</key>
@@ -1451,6 +1461,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.1.1</string>
 </dict>
 </plist>
