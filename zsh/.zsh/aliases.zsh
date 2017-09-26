@@ -49,7 +49,7 @@ alias gl="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgre
 alias be="bundle exec"
 alias ber="be rake"
 alias bet="be rspec"
-alias cbet="COV=1 be rspec"
+alias cbet="COVERAGE=true COV=1 be rspec"
 
 # Rake tasks
 alias rr="be rake routes"
