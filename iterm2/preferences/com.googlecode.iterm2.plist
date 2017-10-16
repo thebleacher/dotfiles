@@ -14,6 +14,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -511,11 +513,11 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>960 53 954 1124 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>960 62 954 1115 0 0 1920 1177 </string>
+	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>960 62 954 1115 0 0 1920 1177 </string>
+	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>790 470 1130 707 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1409,10 +1411,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-21T13:42:19Z</date>
+	<date>2017-09-29T11:25:58Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -1458,9 +1462,11 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>1</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.1</string>
+	<string>3.1.2</string>
 </dict>
 </plist>
