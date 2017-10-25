@@ -48,6 +48,7 @@ brew "flac"
 brew "gpg"
 
 cask "alfred"
+cask "appcleaner"
 cask "caffeine"
 cask "dash"
 cask "daisydisk"
