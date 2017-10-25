@@ -20,6 +20,54 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General settings
 
 defaults write com.apple.loginwindow LoginwindowText "If you've found this laptop lying around, please contact me: +31 6 45 74 64 93 / martijn.bleeker@gmail.com"
+# Some localisation
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
+defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
+
+# Keyboard
+
+# Quick repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Disable auto replacing stuff
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
+
+# Except the user configured ones
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool true
+
+# Spotlight
+# No web lookups for spotlight
+defaults write com.apple.lookup.shared LookupSuggestionsDisabled -bool true
+
+# Energy preference
+# Disable warning about higher energy usage
+defaults write com.apple.preferences.energysaver hasBeenWarnedAboutEnergyUsage YES
+
+# Mouse /Trackpad
+
+# No more big cursor on wiggle
+defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
+
+# Enable app expose
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+# Clicking and dragging on tap
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
+
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
+
+# Enable screen zoom with control
+defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
 
 # UI settings
 
@@ -99,6 +147,10 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Magnification
+defaults write com.apple.dock largesize -int 50
+defaults write com.apple.dock magnification -int 1
 
 # Messages
 
