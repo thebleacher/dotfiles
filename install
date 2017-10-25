@@ -41,9 +41,11 @@ done
 git config --global color.diff always
 git config --global user.email "martijn@thebleacher.com"
 git config --global user.name "Martijn Bleeker"
+git config --global user.signingkey 766C9272
 git config --global core.excludesfile "$HOME/.gitignore_global"
 git config --global merge.ff only
 git config --global rebase.autosquash true
 git config --global push.default current
 git config --global remote.origin.prune true
 git config --global transfer.fsckobjects true
+git config --global commit.gpgsign true
