@@ -27,8 +27,6 @@ Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
-Plugin 'slim-template/vim-slim.git'
-
 call vundle#end()
 
 syntax enable
