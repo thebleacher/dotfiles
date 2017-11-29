@@ -1,9 +1,8 @@
 "*":
-  "exception-reporting":
-    userId: "24dd800a-ca70-bf59-c5ef-9b567968c56c"
-  welcome:
-    showOnStartup: false
   core:
+    audioBeep: false
+    destroyEmptyPanes: false
+    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".bundle"
       ".git"
@@ -13,30 +12,34 @@
       ".capistrano"
       "coverage"
     ]
-    excludeVcsIgnoredPaths: false
-    audioBeep: false
-    destroyEmptyPanes: false
+    telemetryConsent: "no"
   editor:
-    invisibles: {}
-    scrollPastEnd: true
-    showInvisibles: true
-    showIndentGuide: true
     fontFamily: "Menlo"
+    invisibles: {}
     preferredLineLength: 100
-  "tree-view":
-    hideIgnoredNames: true
-  "omni-ruler":
-    columns: []
-  "merge-conflicts": {}
-  minimap:
-    displayPluginsControls: false
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "24dd800a-ca70-bf59-c5ef-9b567968c56c"
   "file-icons":
     coloured: false
-  "one-dark-ui":
-    layoutMode: "Compact"
   linter:
     ignoredLinterErrors: [
       "rubocop"
     ]
+  "merge-conflicts": {}
+  minimap:
+    displayPluginsControls: false
+  "omni-ruler":
+    columns: [
+      "80"
+      "100"
+    ]
+  "one-dark-ui": {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
