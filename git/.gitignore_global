@@ -43,3 +43,7 @@ ehthumbs.dba
 config/initializers/opensslhack.rb
 .yardoc
 
+# ESLint
+######################
+.eslintrc
+bin/jslint
