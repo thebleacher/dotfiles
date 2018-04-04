@@ -27,6 +27,9 @@ Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'wakatime/vim-wakatime'
+Plugin 'posva/vim-vue'
+
 call vundle#end()
 
 syntax enable
