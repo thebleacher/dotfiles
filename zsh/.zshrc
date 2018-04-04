@@ -38,3 +38,6 @@ export PATH="bin:$PATH"
 
 # Needed for unlocking secret key
 export GPG_TTY=$(tty)
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
