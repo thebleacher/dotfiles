@@ -29,6 +29,8 @@ ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
 ln -nfs "$(pwd)/git/.gitignore_global" "$HOME/.gitignore_global"
 ln -nfs "$(pwd)/.agignore" "$HOME/.agignore"
 
+ln -nfs "$(pwd)/mysql/.my.cnf" "$HOME/.my.cnf"
+
 # Copy powerlines
 for file in ./powerline-fonts/Meslo/*.otf; do
   cp -f "$file" "$HOME/Library/Fonts/"
