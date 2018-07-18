@@ -45,4 +45,5 @@ brew "youtube-dl"
 brew "flac"
 
 brew "gpg"
+brew "pinentry-mac"
 

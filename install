@@ -31,6 +31,10 @@ ln -nfs "$(pwd)/.agignore" "$HOME/.agignore"
 
 ln -nfs "$(pwd)/mysql/.my.cnf" "$HOME/.my.cnf"
 
+mkdir -p "$HOME/.gnupg"
+ln -nfs "$(pwd)/.gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
+ln -nfs "$(pwd)/.gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
 # Copy powerlines
 for file in ./powerline-fonts/Meslo/*.otf; do
   cp -f "$file" "$HOME/Library/Fonts/"
