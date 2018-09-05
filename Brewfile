@@ -30,6 +30,7 @@ brew "node"
 brew "qt55"
 
 brew "ack"
+brew "bat"
 brew "grep", args: ["with-default-names"]
 brew "the_silver_searcher"
 brew "tree"
