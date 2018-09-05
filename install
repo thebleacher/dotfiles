@@ -22,6 +22,8 @@ fi
 ln -nfs "$(pwd)/vim/.vimrc"             "$HOME/.vimrc"
 ln -nfs "$(pwd)/vim/.gvimrc"            "$HOME/.gvimrc"
 ln -nfs "$(pwd)/vim/.vim"               "$HOME/.vim"
+ln -nfs "$(pwd)/vim/.vim"               "$HOME/.config/nvim"
+
 ln -nfs "$(pwd)/atom/config.cson"       "$HOME/.atom/config.cson"
 ln -nfs "$(pwd)/atom/styles.less"       "$HOME/.atom/styles.less"
 
