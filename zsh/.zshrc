@@ -39,5 +39,11 @@ export PATH="bin:$PATH"
 # Needed for unlocking secret key
 export GPG_TTY=$(tty)
 
+# Needed for git get
+export GIT_PATH="$HOME/Development/repos"
+
+# Init autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

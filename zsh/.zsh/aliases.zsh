@@ -42,6 +42,7 @@ alias gsd="git stash drop"
 alias gsp="git stash pop"
 alias gsa="git stash --include-untracked"
 alias gl="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gg="git get"
 
 # Bundle exec
 alias be="bundle exec"
