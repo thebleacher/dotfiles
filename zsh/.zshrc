@@ -27,6 +27,9 @@ source "/usr/local/share/chruby/auto.sh"
 # Globally disable spring
 export DISABLE_SPRING="true"
 
+# Set the maximum amount of rails threads to 1 for development purposes
+export RAILS_MAX_THREADS="1"
+
 # Base paths
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
