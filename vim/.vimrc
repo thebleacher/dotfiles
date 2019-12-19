@@ -19,16 +19,18 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'xolox/vim-misc'
 
+Plugin 'wakatime/vim-wakatime'
+
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-haml'
-Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
-Plugin 'wakatime/vim-wakatime'
-Plugin 'posva/vim-vue'
+Plugin 'othree/html5.vim'
+Plugin 'mxw/vim-jsx'
+
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
