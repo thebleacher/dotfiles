@@ -57,3 +57,4 @@ git config --global push.default current
 git config --global remote.origin.prune true
 git config --global transfer.fsckobjects true
 git config --global commit.gpgsign true
+git config --global tag.forceSignAnnotated true
