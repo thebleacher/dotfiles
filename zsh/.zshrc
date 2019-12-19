@@ -2,6 +2,9 @@ ZSH_DIR="$HOME/.zsh" # Path to my custom ZSH directory
 
 export EDITOR=vim
 
+# Prevent homebrew from gathering analytics
+export HOMEBREW_NO_ANALYTICS=1
+
 # Config
 source "$ZSH_DIR/config.zsh"
 source "$ZSH_DIR/functions.zsh"
