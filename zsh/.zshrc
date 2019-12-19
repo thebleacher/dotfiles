@@ -5,6 +5,8 @@ export EDITOR=vim
 # Prevent homebrew from gathering analytics
 export HOMEBREW_NO_ANALYTICS=1
 
+source "$ZSH_DIR/secrets.zsh"
+
 # Config
 source "$ZSH_DIR/config.zsh"
 source "$ZSH_DIR/functions.zsh"

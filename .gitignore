@@ -6,3 +6,4 @@ Icon
 .netrwhist
 vim/.vim/bundle
 vim/.vim/undodir
+zsh/.zsh/secrets.zsh
