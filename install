@@ -59,3 +59,4 @@ git config --global transfer.fsckobjects true
 git config --global commit.gpgsign true
 git config --global tag.forceSignAnnotated true
 git config --global pull.rebase false
+git config --global init.defaultBranch main
