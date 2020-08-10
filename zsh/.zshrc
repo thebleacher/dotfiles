@@ -26,6 +26,9 @@ source "$ZSH_DIR/aliases.zsh"
 source "/usr/local/share/chruby/chruby.sh"
 source "/usr/local/share/chruby/auto.sh"
 
+# asdf
+. $(brew --prefix asdf)/asdf.sh
+
 # Globally disable spring
 export DISABLE_SPRING="true"
 
@@ -35,11 +38,11 @@ export RAILS_MAX_THREADS="1"
 # Base paths
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-# Heroku Toolbelt bin path
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Node Packager Manager bin path
 export PATH="/usr/local/share/npm/bin:./node_modules/.bin:$PATH"
+
+# Add ASDF shims to path
+export PATH="~/.asdf/shims:$PATH"
 
 # Current working directory bin path
 export PATH="bin:$PATH"

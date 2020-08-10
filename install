@@ -9,6 +9,8 @@ ln -nfs "$(pwd)/bin"                    "$HOME/.bin"
 ln -nfs "$(pwd)/zsh/.zshrc"             "$HOME/.zshrc"
 ln -nfs "$(pwd)/zsh/.zsh"               "$HOME/.zsh"
 ln -nfs "$(pwd)/.ruby-version"          "$HOME/.ruby-version"
+ln -nfs "$(pwd)/asdf/.asdfrc"           "$HOME/.asdfrc"
+ln -nfs "$(pwd)/.tool-versions"         "$HOME/.tool-versions"
 
 SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 ln -nfs "$(pwd)/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Preferences.sublime-settings"
