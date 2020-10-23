@@ -1,0 +1,7 @@
+*.rb       diff=ruby
+*_spec.rb  diff=rspec
+*.md       diff=markdown
+*.html     diff=html
+*.xhtml    diff=html
+*.ex       diff=elixir
+*.exs      diff=elixir

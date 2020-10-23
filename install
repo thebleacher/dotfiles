@@ -31,6 +31,7 @@ ln -nfs "$(pwd)/atom/styles.less"       "$HOME/.atom/styles.less"
 
 ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
 ln -nfs "$(pwd)/git/.gitignore_global" "$HOME/.gitignore_global"
+ln -nfs "$(pwd)/git/.gitattributes_global" "$HOME/.gitattributes_global"
 ln -nfs "$(pwd)/.agignore" "$HOME/.agignore"
 
 ln -nfs "$(pwd)/mysql/.my.cnf" "$HOME/.my.cnf"
@@ -53,6 +54,7 @@ git config --global user.email "martijn@thebleacher.com"
 git config --global user.name "Martijn Bleeker"
 git config --global user.signingkey 766C9272
 git config --global core.excludesfile "$HOME/.gitignore_global"
+git config --global core.attributesfile "$HOME/.gitattributes_global"
 git config --global merge.ff only
 git config --global rebase.autosquash true
 git config --global push.default current
@@ -62,3 +64,4 @@ git config --global commit.gpgsign true
 git config --global tag.forceSignAnnotated true
 git config --global pull.rebase false
 git config --global init.defaultBranch main
+git config --global diff.rspec.xfuncname "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"
