@@ -26,8 +26,6 @@ source "$ZSH_DIR/aliases.zsh"
 source "/usr/local/share/chruby/chruby.sh"
 source "/usr/local/share/chruby/auto.sh"
 
-# asdf
-. $(brew --prefix asdf)/asdf.sh
 
 # Globally disable spring
 export DISABLE_SPRING="true"
@@ -41,11 +39,11 @@ export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/
 # Node Packager Manager bin path
 export PATH="/usr/local/share/npm/bin:./node_modules/.bin:$PATH"
 
-# Add ASDF shims to path
-export PATH="~/.asdf/shims:$PATH"
-
 # Current working directory bin path
 export PATH="bin:$PATH"
+
+# asdf
+. $(brew --prefix asdf)/asdf.sh
 
 # Needed for unlocking secret key
 export GPG_TTY=$(tty)
