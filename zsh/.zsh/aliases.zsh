@@ -72,3 +72,7 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Rubocop
 alias cop="be rubocop"
+
+# VPN
+alias vpn="USE_CURRENT_NETWORK_INTERFACE=true ~/Development/repos/nms-git.itservices.lan/NMS/vm-for-nl-vpn/tele2nl_vpn.sh"
+alias testvpn="~/Development/repos/nms-git.itservices.lan/NMS/vm-for-nl-vpn/test_tele2nl_vpn.sh"
