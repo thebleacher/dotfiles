@@ -1,21 +1,12 @@
 alias reload="source $HOME/.zshrc"
 
 # Lazy me
-alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-alias sudo="nocorrect sudo"
 alias ..="cd .."
 alias l="ls"
 alias la="ls -la"
-if [[ $(uname -s) == "Darwin" ]]; then
-  alias flushdns="dscacheutil -flushcache"
-else
-  alias flushdns="sudo /etc/init.d/nscd restart"
-fi;
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias cat="bat"
 
 # Git
-alias g="open -a gitx ."
 alias gs="git status"
 alias gb="git branch"
 alias gba="git branch -a"
@@ -43,14 +34,6 @@ alias ber="be rake"
 alias bet="be rspec"
 alias cbet="COVERAGE=true COV=1 be rspec"
 
-# Rake tasks
-alias rr="be rake routes"
-alias rake="noglob rake" # allows square brackts for rake task invocation
-
-# Middleman
-alias ms="be middleman s"
-alias mb="be middleman b"
-
 # Rails
 alias PROD="RAILS_ENV=production"
 alias TEST="RAILS_ENV=test"
@@ -60,19 +43,17 @@ alias rs="be rails s"
 alias rc="be rails c"
 alias rg="be rails g"
 
-alias rdm="be rake db:migrate"
-alias rdr="be rake db:migrate:reset"
-alias rds="be rake db:seed"
+alias rr="be rails routes"
+
+alias rdm="be rails db:migrate"
+alias rdr="be rails db:migrate:reset"
+alias rds="be rails db:seed"
 
 alias rdi="rdr && rds"
-alias rdsd="rdr && SEED_DEMO=1 bundle exec rake db:seed"
+alias rdsd="rdr && SEED_DEMO=1 bundle exec rails db:seed"
 
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Rubocop
 alias cop="be rubocop"
-
-# VPN
-alias vpn="USE_CURRENT_NETWORK_INTERFACE=true ~/Development/repos/nms-git.itservices.lan/NMS/vm-for-nl-vpn/tele2nl_vpn.sh"
-alias testvpn="~/Development/repos/nms-git.itservices.lan/NMS/vm-for-nl-vpn/test_tele2nl_vpn.sh"

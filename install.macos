@@ -1,0 +1,15 @@
+#! /bin/bash
+
+SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
+ln -nfs "$(pwd)/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Preferences.sublime-settings"
+ln -nfs "$(pwd)/sublime/Default (OSX).sublime-keymap" "$SUBLIME_DIR/Default (OSX).sublime-keymap"
+
+ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
+
+# Copy powerlines
+for file in ./powerline-fonts/Meslo/*.otf; do
+  cp -f "$file" "$HOME/Library/Fonts/"
+done
+
+# https://github.com/postmodern/chruby/issues/196#issuecomment-23826171
+[[ -e /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zprofile

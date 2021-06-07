@@ -21,6 +21,12 @@ source "$ZSH_DIR/termsupport.zsh"
 
 # Aliases
 source "$ZSH_DIR/aliases.zsh"
+if [[ $(uname -s) == "Darwin" ]]; then
+  source "$ZSH_DIR/aliases.macos.zsh"
+elif [[ $(uname -s) == "Linux" ]]; then
+  source "$ZSH_DIR/aliases.linux.zsh"
+fi
+source "$ZSH_DIR/aliases.zsh"
 
 # chruby
 source "/usr/local/share/chruby/chruby.sh"

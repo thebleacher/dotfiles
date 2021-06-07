@@ -1,0 +1,9 @@
+#! /bin/bash
+
+# Copy powerlines
+mkdir -p "$HOME/.fonts"
+for file in ./powerline-fonts/Meslo/*.otf; do
+  cp -f "$file" "$HOME/.fonts/"
+done
+
+sudo fc-cache -f -v

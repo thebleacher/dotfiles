@@ -12,10 +12,6 @@ ln -nfs "$(pwd)/.ruby-version"          "$HOME/.ruby-version"
 ln -nfs "$(pwd)/asdf/.asdfrc"           "$HOME/.asdfrc"
 ln -nfs "$(pwd)/.tool-versions"         "$HOME/.tool-versions"
 
-SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
-ln -nfs "$(pwd)/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Preferences.sublime-settings"
-ln -nfs "$(pwd)/sublime/Default (OSX).sublime-keymap" "$SUBLIME_DIR/Default (OSX).sublime-keymap"
-
 if ! [ -d "$HOME/.atom" ]
 then
   mkdir "$HOME/.atom"
@@ -29,7 +25,6 @@ ln -nfs "$(pwd)/vim/.vim"               "$HOME/.config/nvim"
 ln -nfs "$(pwd)/atom/config.cson"       "$HOME/.atom/config.cson"
 ln -nfs "$(pwd)/atom/styles.less"       "$HOME/.atom/styles.less"
 
-ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
 ln -nfs "$(pwd)/git/.gitignore_global" "$HOME/.gitignore_global"
 ln -nfs "$(pwd)/git/.gitattributes_global" "$HOME/.gitattributes_global"
 ln -nfs "$(pwd)/.agignore" "$HOME/.agignore"
@@ -40,13 +35,6 @@ mkdir -p "$HOME/.gnupg"
 ln -nfs "$(pwd)/.gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
 ln -nfs "$(pwd)/.gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 
-# Copy powerlines
-for file in ./powerline-fonts/Meslo/*.otf; do
-  cp -f "$file" "$HOME/Library/Fonts/"
-done
-
-# https://github.com/postmodern/chruby/issues/196#issuecomment-23826171
-[[ -e /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zprofile
 
 # Global Git configuration
 git config --global color.diff always
@@ -65,3 +53,10 @@ git config --global tag.forceSignAnnotated true
 git config --global pull.rebase false
 git config --global init.defaultBranch main
 git config --global diff.rspec.xfuncname "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"
+git config --global alias.recent 'branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"'
+
+if [[ $(uname -s) == "Darwin" ]]; then
+  ./install.macos
+elif [[ $(uname -s) == "Linux" ]]; then
+  ./install.linux
+fi
