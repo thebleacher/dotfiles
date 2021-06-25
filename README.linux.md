@@ -11,7 +11,7 @@ These dotfiles contain configuration and installation for:
 
 ## Installation
 
-sudo apt-get install git
+sudo apt-get install build-essential procps curl file git ruby
 
 sudo snap install sublime-text --classic
 
