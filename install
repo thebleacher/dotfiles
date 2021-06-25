@@ -7,6 +7,8 @@ ln -nfs "$(pwd)/ruby/.rspec"            "$HOME/.rspec"
 ln -nfs "$(pwd)/bin"                    "$HOME/.bin"
 
 ln -nfs "$(pwd)/zsh/.zshrc"             "$HOME/.zshrc"
+touch "$HOME/.zshrc/secrets.zsh"
+
 ln -nfs "$(pwd)/zsh/.zsh"               "$HOME/.zsh"
 ln -nfs "$(pwd)/.ruby-version"          "$HOME/.ruby-version"
 ln -nfs "$(pwd)/asdf/.asdfrc"           "$HOME/.asdfrc"
@@ -20,6 +22,7 @@ fi
 ln -nfs "$(pwd)/vim/.vimrc"             "$HOME/.vimrc"
 ln -nfs "$(pwd)/vim/.gvimrc"            "$HOME/.gvimrc"
 ln -nfs "$(pwd)/vim/.vim"               "$HOME/.vim"
+mkdir -p "$HOME/.config"
 ln -nfs "$(pwd)/vim/.vim"               "$HOME/.config/nvim"
 
 ln -nfs "$(pwd)/atom/config.cson"       "$HOME/.atom/config.cson"
