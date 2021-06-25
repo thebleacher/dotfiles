@@ -28,21 +28,38 @@ the submodules and finally hook everything up by running the `install` script.
 This should set up the symlinks from the dotfiles directory to your `$HOME`
 directory, do not remove the `dotfiles` directory.
 
-### Install packages
+### Homebrew
 
-xargs -a Aptfile sudo apt-get install
+Next, install [Homebrew](http://mxcl.github.com/homebrew/) using the following
+command.
 
-#### chruby and ruby-install
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
-tar -xzvf chruby-0.3.9.tar.gz
-cd chruby-0.3.9/
-sudo make install
+After install Homebrew, install packages
+
+    brew update
+    brew bundle --file=Brewfile_linux
+
+### ZSH
+
+Add the homebrew zsh to available shells and set it as the default shell
+
+    command -v zsh | sudo tee -a /etc/shells
+    sudo chsh -s "$(command -v zsh)"
+
+### chruby and ruby-install
+
+Install chruby by following the instructions on the
+[project page](https://github.com/postmodern/chruby).
 
 
-wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/ruby-install/archive/v0.8.1.tar.gz
-tar -xzvf ruby-install-0.8.1.tar.gz
-cd ruby-install-0.8.1/
-sudo make install
+```bash
+ruby-install ruby-[VERSION] ~/.rubies/ruby-[VERSION]
+```
 
+### Vim
 
+#### Vundle
+```bash
+vim +:PluginInstall
+```
