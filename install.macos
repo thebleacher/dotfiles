@@ -6,6 +6,10 @@ ln -nfs "$(pwd)/sublime/Default (OSX).sublime-keymap" "$SUBLIME_DIR/Default (OSX
 
 ln -nfs "$(pwd)/hammerspoon" "$HOME/.hammerspoon"
 
+mkdir -p "$HOME/.gnupg"
+ln -nfs "$(pwd)/.gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
+ln -nfs "$(pwd)/.gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
 # Copy powerlines
 for file in ./powerline-fonts/Meslo/*.otf; do
   cp -f "$file" "$HOME/Library/Fonts/"

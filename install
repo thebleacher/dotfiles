@@ -34,11 +34,6 @@ ln -nfs "$(pwd)/.agignore" "$HOME/.agignore"
 
 ln -nfs "$(pwd)/mysql/.my.cnf" "$HOME/.my.cnf"
 
-mkdir -p "$HOME/.gnupg"
-ln -nfs "$(pwd)/.gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
-ln -nfs "$(pwd)/.gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
-
-
 # Global Git configuration
 git config --global color.diff always
 git config --global user.email "martijn@thebleacher.com"
