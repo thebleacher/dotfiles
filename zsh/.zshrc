@@ -29,13 +29,8 @@ fi
 source "$ZSH_DIR/aliases.zsh"
 
 # chruby
-if [[ $(uname -s) == "Darwin" ]]; then
-  source "/usr/local/share/chruby/chruby.sh"
-  source "/usr/local/share/chruby/auto.sh"
-elif [[ $(uname -s) == "Linux" ]]; then
-  source "/home/linuxbrew/.linuxbrew/opt/chruby/share/chruby/chruby.sh"
-  source "/home/linuxbrew/.linuxbrew/opt/chruby/share/chruby/auto.sh"
-fi
+source "/usr/local/share/chruby/chruby.sh"
+source "/usr/local/share/chruby/auto.sh"
 
 # Globally disable spring
 export DISABLE_SPRING="true"
@@ -55,13 +50,14 @@ export PATH="bin:$PATH"
 if [[ $(uname -s) == "Linux" ]]; then
   # SSH agent stuff
   eval $(ssh-agent -s)
-
-  # Add linuxbrew variables
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # asdf
-. $(brew --prefix asdf)/asdf.sh
+if [[ $(uname -s) == "Darwin" ]]; then
+  . $(brew --prefix asdf)/asdf.sh
+elif [[ $(uname -s) == "Linux" ]]; then
+  . $HOME/.asdf/asdf.sh
+fi
 
 # Needed for unlocking secret key
 export GPG_TTY=$(tty)
@@ -71,7 +67,7 @@ export GIT_PATH="$HOME/Development/repos"
 
 # Init autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-[ -f /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh ] && . /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

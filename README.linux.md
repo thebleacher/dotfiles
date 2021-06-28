@@ -11,9 +11,48 @@ These dotfiles contain configuration and installation for:
 
 ## Installation
 
-sudo apt-get install build-essential procps curl file git ruby
+sudo apt-get install \
+  build-essential procps curl file git ruby vim zsh git tig mercurial htop mc \
+  memcached default-mysql-server postgresql redis sqlite openssl  ack autojump \
+  tree unrar-free procps wget imagemagick optipng jpegoptim ffmpeg youtube-dl \
+  flac par2 gpg
 
 sudo snap install sublime-text --classic
+
+## bat
+
+At the time of writing this, bat is not available in the stable APT repo of Debian.
+
+Alternative install method is to grab the `.deb` package from [here](https://github.com/sharkdp/bat) and install with `dpkg -i bat_0.18.1_amd64.deb`.
+
+## ASDF
+
+From their [website](https://asdf-vm.com/#/core-manage-asdf?id=asdf)
+
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+```
+
+## chruby
+
+From their [github](https://github.com/postmodern/chruby#install):
+
+```
+wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
+tar -xzvf chruby-0.3.9.tar.gz
+cd chruby-0.3.9/
+sudo make install
+```
+
+## ruby-install
+
+From their [github](https://github.com/postmodern/ruby-install#install)
+```
+wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/ruby-install/archive/v0.8.1.tar.gz
+tar -xzvf ruby-install-0.8.1.tar.gz
+cd ruby-install-0.8.1/
+sudo make install
+```
 
 ### Environment, ZSH, Sublime configuration
 
