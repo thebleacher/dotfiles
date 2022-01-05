@@ -1,3 +1,2 @@
-elixir 1.10.4
-erlang 23.0.3
-nodejs 12.18.3
+golang 1.17.3
+golangci-lint 1.43.0

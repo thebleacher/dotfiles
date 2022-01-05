@@ -14,6 +14,11 @@ brew "ruby-install"
 brew "asdf"
 brew "elixir"
 
+brew "kubernetes-cli"
+brew "hashicorp/tap/terraform"
+brew "helm"
+brew "google-cloud-sdk"
+
 brew "memcached"
 brew "mysql"
 brew "postgresql"
@@ -45,4 +50,3 @@ brew "par2"
 
 brew "gpg"
 brew "pinentry-mac"
-

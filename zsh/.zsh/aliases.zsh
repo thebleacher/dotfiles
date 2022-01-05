@@ -6,6 +6,7 @@ alias sudo="nocorrect sudo"
 alias ..="cd .."
 alias l="ls"
 alias la="ls -la"
+alias lah="ls -lah"
 if [[ $(uname -s) == "Darwin" ]]; then
   alias flushdns="dscacheutil -flushcache"
 else
@@ -15,7 +16,7 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias cat="bat"
 
 # Git
-alias g="open -a gitx ."
+alias g="open -a fork ."
 alias gs="git status"
 alias gb="git branch"
 alias gba="git branch -a"
@@ -73,3 +74,5 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # Rubocop
 alias cop="be rubocop"
 
+# Dotenv
+alias dotenv="set -o allexport; source .env; set +o allexport"
