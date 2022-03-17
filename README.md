@@ -81,10 +81,10 @@ it is installed.
 
 - [Package Control](http://wbond.net/sublime_packages/package_control)
 - [BracketHighlighter](https:/github.com/facelessuser/BracketHighlighter)
-- [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended.git)
 - [Sass](https://github.com/nathos/sass-textmate-bundle)
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel.git)
-- [Theme - Soda](https://github.com/buymeasoda/soda-theme.git)
+- [Theme - Phoenix](https://github.com/netatoo/phoenix-theme)
+- [Twilight+](https://github.com/xy2z/SublimeTwilight)
 
 ### Atom plugins
 
