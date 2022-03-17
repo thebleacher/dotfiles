@@ -90,6 +90,8 @@ set expandtab                     " Use spaces instead of tabs.
 set clipboard=unnamed             " Enable OS clipboard to properly paste in to VIM buffer.
 set pastetoggle=<F2>
 
+set termguicolors
+
 set background=dark
 colorscheme twilight
 
