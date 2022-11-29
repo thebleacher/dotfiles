@@ -32,6 +32,7 @@ Plugin 'mxw/vim-jsx'
 
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'fatih/vim-go'
+Plugin 'udalov/kotlin-vim'
 
 call vundle#end()
 
@@ -126,5 +127,6 @@ let g:font_normal="Meslo\ LG\ M\ Regular\ for\ Powerline:h14"
 let g:font_focus="Meslo\ LG\ M\ Regular\ for\ Powerline:h20"
 
 let g:go_def_mapping_enabled=0
+let g:gofmt_command = "goimports"
 
 runtime! config/**/*.vim
