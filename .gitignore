@@ -7,3 +7,4 @@ Icon
 vim/.vim/bundle
 vim/.vim/undodir
 zsh/.zsh/secrets.zsh
+Brewfile.lock.json
