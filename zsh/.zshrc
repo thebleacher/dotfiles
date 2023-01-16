@@ -22,13 +22,6 @@ source "$ZSH_DIR/termsupport.zsh"
 # Aliases
 source "$ZSH_DIR/aliases.zsh"
 
-# chruby
-source "/usr/local/share/chruby/chruby.sh"
-source "/usr/local/share/chruby/auto.sh"
-
-# Google Cloud SDK
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 # Globally disable spring
 export DISABLE_SPRING="true"
@@ -45,8 +38,21 @@ export PATH="/usr/local/share/npm/bin:./node_modules/.bin:$PATH"
 # Current working directory bin path
 export PATH="bin:$PATH"
 
+# Set PATH, MANPATH, etc., for Homebrew.
+[ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+[ -f "/usr/local/bin/brew" ] && eval "$(/usr/local/bin/brew shellenv)"
+
+# chruby
+[ -f $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh ] && . $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+[ -f $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh ] && . $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
+
 # asdf
-. $(brew --prefix asdf)/asdf.sh
+[ -f $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh ] && . $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+
+# Google Cloud SDK
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+[ -f $HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc ] && source $HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+[ -f $HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc ] && source $HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 
 # Needed for unlocking secret key
 export GPG_TTY=$(tty)
@@ -55,7 +61,14 @@ export GPG_TTY=$(tty)
 export GIT_PATH="$HOME/Development/repos"
 
 # Init autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
+
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+export DOCKER_BUILDKIT=0
+export COMPOSE_DOCKER_CLI_BUILD=0
+
+# Set JAVA_HOME
+[ -f ~/.asdf/plugins/java/set-java-home.zsh ] && . ~/.asdf/plugins/java/set-java-home.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
