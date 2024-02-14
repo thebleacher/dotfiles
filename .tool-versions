@@ -1,9 +1,4 @@
-golang 1.19
-golangci-lint 1.48.0
-java zulu-18.32.11
-kotlin 1.7.10
-maven 3.8.6
-nodejs 18.3.0
-quarkus 2.11.2.Final
-swag 1.8.4
-yarn 1.22.19
+golang 1.22.0
+nodejs 18.19.0
+python 3.9.17
+yarn 1.22.21
