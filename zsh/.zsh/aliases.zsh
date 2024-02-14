@@ -45,7 +45,7 @@ alias bet="be rspec"
 alias cbet="COVERAGE=true COV=1 be rspec"
 
 # Rake tasks
-alias rr="be rake routes"
+alias rr="be rails routes"
 alias rake="noglob rake" # allows square brackts for rake task invocation
 
 # Middleman
