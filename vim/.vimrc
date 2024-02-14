@@ -9,7 +9,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-surround'
@@ -32,6 +32,8 @@ Plugin 'mxw/vim-jsx'
 
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'fatih/vim-go'
+
+Plugin 'github/copilot.vim'
 
 call vundle#end()
 
@@ -78,7 +80,10 @@ set nowritebackup                 " And again.
 
 set history=1000                  " Remember last 1000 commands.
 set undolevels=1000               " Remember last 1000 undos.
-set wildignore=*.swp,*.swo,*.bak,*.class
+set wildignore=*.swp,*.swo,*.bak,*.class,*.lock,.gitkeep,.git/**
+set wildignore+=**/vendor/**,**/tmp/**,tmp/**,log/**,coverage/**,doc/**
+set wildignore+=*.ico,*.png,*.PNG,*.JPG,*.jpg,*.JPEG,*.jpeg,*.GIF,*.gif
+set wildignore+=*/node_modules,node_modules,*.min.js,public/packs/**,**/public/packs-test/**
 
 " Maintain undo history between sessions
 set undodir=~/.vim/undodir
@@ -127,5 +132,9 @@ let g:font_focus="Meslo\ LG\ M\ Regular\ for\ Powerline:h20"
 
 let g:go_def_mapping_enabled=0
 let g:gofmt_command = "goimports"
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 runtime! config/**/*.vim
